@@ -14,24 +14,24 @@ void wishme(){
     tm *time = localtime(&now);
 
     if (time-> tm_hour < 12){
-        cout<< "Good Morning Boss"<<endl;
-        string phrase = "Good Morning Boss";
+        cout<< "Good Morning Master"<<endl;
+        string phrase = "Good Morning Master";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
     }
 
     else if (time-> tm_hour >= 12 && time->tm_hour <= 16){
-        cout<< "Good Afternoon Boss"<<endl;
-        string phrase = "Good Afternoon Boss";
+        cout<< "Good Afternoon Master"<<endl;
+        string phrase = "Good Afternoon Master";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
     }
     
     else if (time-> tm_hour > 16 && time->tm_hour < 24){
-        cout<< "Good Evening Boss"<<endl;
-        string phrase = "Good Evening Boss";
+        cout<< "Good Evening Master"<<endl;
+        string phrase = "Good Evening Master";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
@@ -77,9 +77,9 @@ int main()
             wishme();
             do{
                 cout<<"\n<==================================================================================================>\n\n";
-                cout<<endl<<"How can i help you boss...."<<endl<<endl;
+                cout<<endl<<"How can i help you Master...."<<endl<<endl;
 
-                string phrase = "How can i help you boss";
+                string phrase = "How can i help you Master";
                 string command = "espeak \"" + phrase + "\"";
                 const char *charCommand = command.c_str();
                 system(charCommand);
@@ -90,8 +90,8 @@ int main()
                 cout<<"Here is the result for your query ===> ";
 
                 if(strcmp(ch, "hi") == 0 || strcmp(ch, "hey") == 0 || strcmp(ch, "hello") == 0 ){
-                    cout<<"Hello Boss....."<<endl;
-                    string phrase = "Hello Boss";
+                    cout<<"Hello Master....."<<endl;
+                    string phrase = "Hello Master";
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
                     system(charCommand);
@@ -121,7 +121,9 @@ int main()
                     const char *charCommand = command.c_str();
                     system(charCommand);
                 }
-
+                
+                
+                
                 else if(strcmp(ch, "time") == 0 || strcmp(ch, "date") == 0){
                     // make function to show date and time
                     datetime();
@@ -144,8 +146,45 @@ int main()
                     system(charCommand);
                     system("start https://www.google.com");
                 }
-                   
-                else if(strcmp(ch, "open facebook	") == 0){
+                
+                else if(strcmp(ch, "tell me about google ceo") == 0){
+                    cout<<"openining info about google ceo....."<<endl;
+                    string phrase = "opening  info about google ceo";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start  https://en.wikipedia.org/wiki/Sundar_Pichai");
+                }
+
+                else if(strcmp(ch, "who is elon musk") == 0){
+                    cout<<"openining info about elon musk....."<<endl;
+                    string phrase = "opening  info about elon musK";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start  https://en.wikipedia.org/wiki/Elon_Musk");
+                }
+
+                else if(strcmp(ch, "open linkedin") == 0){
+                    cout<<"openining linkedin....."<<endl;
+                    string phrase = "opening  linkedin ";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://www.linkedin.com/login ");
+                }
+
+                else if(strcmp(ch, "open github") == 0){
+                    cout<<"openining github....."<<endl;
+                    string phrase = "opening github";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://desktop.github.com/ ");
+                }
+
+
+                else if(strcmp(ch, "open facebook") == 0){
                     cout<<"openining facebook....."<<endl;
                     string phrase = "opening facebook";
                     string command = "espeak \"" + phrase + "\"";
@@ -172,6 +211,82 @@ int main()
                     system("start https://www.instagram.com");
                 }
 
+                 else if(strcmp(ch, "open jecrc") == 0){
+                    cout<<"openining jecrc....."<<endl;
+                    string phrase = "opening jecrc";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://jecrcfoundation.com");
+                }
+                 
+                 else if(strcmp(ch, "about ML") == 0){
+                    cout<<"openining ML....."<<endl;
+                    string phrase = "opening ML";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start  https://en.wikipedia.org/wiki/Machine_learning");
+                }
+                 
+                 else if(strcmp(ch, "about rocket science") == 0){
+                    cout<<"openining rocket science....."<<endl;
+                    string phrase = "opening rocket science";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://en.wikipedia.org/wiki/Rocket_science#:~:text=Rocket%20science%20is%20a%20colloquial,is%20not%20difficult%20to%20understand. ");
+                }
+                else if(strcmp(ch, "about data science") == 0){
+                    cout<<"openining data science....."<<endl;
+                    string phrase = "opening data science";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://en.wikipedia.org/wiki/Data_science ");
+                }
+                else if(strcmp(ch, "about cyber security") == 0){
+                    cout<<"openining cyber security....."<<endl;
+                    string phrase = "opening cyber security";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://en.wikipedia.org/wiki/Computer_security ");
+                }
+                 
+                else if(strcmp(ch, "open about tech a thon") == 0){
+                    cout<<"openining tech a thon....."<<endl;
+                    string phrase = "opening tech a thon";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://hackathon.ineuron.ai/techathon2.0");
+                }
+                else if(strcmp(ch, "open about blockchain") == 0){
+                    cout<<"openining blockchain ....."<<endl;
+                    string phrase = "opening blockchain";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://en.wikipedia.org/wiki/Blockchain");
+                }
+                else if(strcmp(ch, "open about cryptocurrency") == 0){
+                    cout<<"openining about cryptocurrency ....."<<endl;
+                    string phrase = "opening cryptocurrency";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://en.wikipedia.org/wiki/Cryptocurrency");
+                }
+                else if(strcmp(ch, "open instagram") == 0){
+                    cout<<"openining instagram....."<<endl;
+                    string phrase = "opening instagram";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start       ");
+                }
+                
                 else{
                     cout<<"Sorry could not understand your query please ty again !!!"<<endl;
                     string phrase = "Sorry could not understand your query please ty again";

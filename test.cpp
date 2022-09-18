@@ -28,7 +28,9 @@ void wishme(){
         const char *charCommand = command.c_str();
         system(charCommand);
     }
-    
+     
+     
+     
     else if (time-> tm_hour > 16 && time->tm_hour < 24){
         cout<< "Good Evening Boss"<<endl;
         string phrase = "Good Evening Boss";
@@ -121,7 +123,7 @@ int main()
                     const char *charCommand = command.c_str();
                     system(charCommand);
                 }
-
+                
                 else if(strcmp(ch, "time") == 0 || strcmp(ch, "date") == 0){
                     // make function to show date and time
                     datetime();
@@ -133,7 +135,7 @@ int main()
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
                     system(charCommand);
-                  CreateProcess(TEXT("C:\\Windows\\notepad.exe"), NULL, NULL, NULL, FALSE, NULL, NULL, NULL, &startInfo, &processInfo);
+                  //CreateProcess(TEXT("C:\\Windows\\notepad.exe"), NULL, NULL, NULL, FALSE, NULL, NULL, NULL, &startInfo, &processInfo);
                 }
             
                 else if(strcmp(ch, "open google") == 0){
