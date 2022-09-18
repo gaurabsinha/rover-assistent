@@ -167,7 +167,7 @@ int main()
 
                 else if(strcmp(ch, "open linkedin") == 0){
                     cout<<"openining linkedin....."<<endl;
-                    string phrase = "opening  linkedin ";
+                    string phrase = "opening  linkedin";
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
                     system(charCommand);
@@ -305,13 +305,11 @@ int main()
                     cout << "\t\t\t<============================= W E L C O M E=============================>" << endl;
                     cout << "\t\t\t<============================= I'M VIRTUAL ASSISTANT =============================>" << endl;
                     cout << "\t\t\t<============================= MY NAME IS ROVER =============================>" << endl;
-                    cout << "\t\t\t<============================= I'M HERE TO HELP YOU AND MAKE YOUR LIFE EASY =============================>" << endl
-                         << endl;
+                    cout << "\t\t\t<============================= I'M HERE TO HELP YOU AND MAKE YOUR LIFE EASY =============================>" << endl<< endl;
 
                     cout << "======================" << endl;
                     cout << "X Incorrect Password X" << endl;
-                    cout << "======================" << endl
-                         << endl;
+                    cout << "======================" << endl<< endl;
                     string phrase = "Incorrect Password, Please enter correct password";
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
